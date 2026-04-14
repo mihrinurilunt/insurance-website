@@ -1,6 +1,5 @@
 node_modules
-.claude
-claude.md
+.claude/commands
+CLAUDE.md
 .DS_Store
 .env
-.env.local
