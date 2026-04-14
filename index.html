@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çağdaş Lider Sigorta – Güvenilir Sigorta Çözümleri</title>
+  <meta name="description" content="Çağdaş Lider Sigorta – Kadıköy'de yetkili sigorta acentesi. Allianz, AXA, Aksigorta ve daha fazlası. Hızlı teklif alın." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <img src="logo.jpeg" alt="Çağdaş Lider Sigorta" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">Çağdaş Lider</span>
+          <span class="logo-sub">SİGORTA</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#acenteler">Acenteler</a>
+        <a href="#teklif" class="btn-nav">Teklif Al</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Kadıköy'ün Güvenilir Sigorta Acentesi</div>
+      <h1>Sizi ve<br /><span class="highlight">Sevdiklerinizi</span><br />Güvence Altına Alıyoruz</h1>
+      <p class="hero-desc">Allianz, AXA, Aksigorta ve daha pek çok köklü sigorta şirketinin yetkili acentesi olarak size en uygun poliçe çözümünü sunuyoruz.</p>
+      <div class="hero-actions">
+        <a href="#teklif" class="btn-primary">Hemen Teklif Al</a>
+        <a href="#hizmetler" class="btn-outline">Hizmetlerimiz</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>10+</strong><span>Yetkili Acente</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>7/24</strong><span>Destek</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>%100</strong><span>Müşteri Memnuniyeti</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Aşağı kaydır</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- TEKLİF AL (QUOTE FORM) — Ana bölüm -->
+  <section class="teklif-section" id="teklif">
+    <div class="container">
+      <div class="section-label">POLİÇE TEKLİFİ</div>
+      <h2 class="section-title">Ücretsiz Teklif Alın</h2>
+      <p class="section-desc">Bilgilerinizi doldurun, size en uygun sigorta teklifini hazırlayalım.</p>
+
+      <div class="teklif-wrapper">
+        <div class="teklif-main">
+        <!-- Sigorta Türü Seçimi -->
+        <div class="sigorta-turu-grid">
+          <button class="turu-btn active" data-type="kasko">
+            <span class="turu-icon">🚗</span>
+            <span>Kasko</span>
+          </button>
+          <button class="turu-btn" data-type="trafik">
+            <span class="turu-icon">🛣️</span>
+            <span>Trafik</span>
+          </button>
+          <button class="turu-btn" data-type="konut">
+            <span class="turu-icon">🏠</span>
+            <span>Konut</span>
+          </button>
+          <button class="turu-btn" data-type="dask">
+            <span class="turu-icon">🌍</span>
+            <span>DASK</span>
+          </button>
+          <button class="turu-btn" data-type="saglik">
+            <span class="turu-icon">❤️</span>
+            <span>Sağlık</span>
+          </button>
+          <button class="turu-btn" data-type="seyahat">
+            <span class="turu-icon">✈️</span>
+            <span>Seyahat</span>
+          </button>
+          <button class="turu-btn" data-type="isyeri">
+            <span class="turu-icon">🏢</span>
+            <span>İşyeri</span>
+          </button>
+          <button class="turu-btn" data-type="hayat">
+            <span class="turu-icon">💚</span>
+            <span>Hayat</span>
+          </button>
+        </div>
+
+        <!-- Form -->
+        <form class="teklif-form" id="teklifForm" novalidate>
+          <input type="hidden" name="sigorta_turu" id="sigortaTuru" value="kasko" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ad">Ad Soyad *</label>
+              <input type="text" id="ad" name="ad" placeholder="Adınız Soyadınız" required />
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefon *</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="05XX XXX XX XX" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-posta</label>
+              <input type="email" id="email" name="email" placeholder="ornek@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="sehir">Şehir</label>
+              <select id="sehir" name="sehir">
+                <option value="">Seçiniz</option>
+                <option value="istanbul" selected>İstanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="bursa">Bursa</option>
+                <option value="diger">Diğer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Dinamik alanlar: araç -->
+          <div class="dynamic-fields" id="fields-kasko">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tc-kimlik-no-kasko">TC Kimlik No (Bireysel)</label>
+                <input type="text" id="tc-kimlik-no-kasko" name="tc_kimlik_no" placeholder="11 haneli TC Kimlik No" />
+              </div>
+              <div class="form-group">
+                <label for="vergi-no-kasko">Vergi No (Şirket)</label>
+                <input type="text" id="vergi-no-kasko" name="vergi_no" placeholder="10 haneli Vergi No" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="plaka">Araç Plakası</label>
+                <input type="text" id="plaka" name="plaka" placeholder="34 ABC 123" />
+              </div>
+              <div class="form-group">
+                <label for="arac-marka">Marka / Model</label>
+                <input type="text" id="arac-marka" name="arac_marka" placeholder="Toyota Corolla" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="arac-yil">Araç Yılı</label>
+                <input type="number" id="arac-yil" name="arac_yil" placeholder="2020" min="1990" max="2026" />
+              </div>
+              <div class="form-group">
+                <label for="kasko-turu">Kasko Türü</label>
+                <select id="kasko-turu" name="kasko_turu">
+                  <option value="tam">Tam Kasko</option>
+                  <option value="mini">Mini Kasko</option>
+                  <option value="genisletilmis">Genişletilmiş Kasko</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-trafik">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tc-kimlik-no-trafik">TC Kimlik No (Bireysel)</label>
+                <input type="text" id="tc-kimlik-no-trafik" name="tc_kimlik_no" placeholder="11 haneli TC Kimlik No" />
+              </div>
+              <div class="form-group">
+                <label for="vergi-no-trafik">Vergi No (Şirket) </label>
+                <input type="text" id="vergi-no-trafik" name="vergi_no" placeholder="10 haneli Vergi No" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="trafik-plaka">Araç Plakası</label>
+                <input type="text" id="trafik-plaka" name="trafik_plaka" placeholder="34 ABC 123" />
+              </div>
+              <div class="form-group">
+                <label for="trafik-arac">Araç Türü</label>
+                <select id="trafik-arac" name="trafik_arac">
+                  <option value="binek">Binek Araç</option>
+                  <option value="ticari">Ticari Araç</option>
+                  <option value="motosiklet">Motosiklet</option>
+                  <option value="minibus">Minibüs</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-konut">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="konut-adres">Konut Adresi</label>
+                <input type="text" id="konut-adres" name="konut_adres" placeholder="Mahalle, cadde, no..." />
+              </div>
+              <div class="form-group">
+                <label for="konut-m2">Metrekare (m²)</label>
+                <input type="number" id="konut-m2" name="konut_m2" placeholder="100" min="20" max="2000" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="konut-bina-bedeli">Bina Bedeli</label>
+                <input type="number" id="konut-bina-bedeli" name="konut_bina_bedeli" placeholder="Bina bedeli" min="0" />
+              </div>
+              <div class="form-group">
+                <label for="konut-esya-bedeli">Eşya Bedeli</label>
+                <input type="number" id="konut-esya-bedeli" name="konut_esya_bedeli" placeholder="Eşya bedeli" min="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-dask">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dask-adres">Adres</label>
+                <input type="text" id="dask-adres" name="dask_adres" placeholder="İl, ilçe, mahalle..." />
+              </div>
+              <div class="form-group">
+                <label for="dask-yapi">Yapı Türü</label>
+                <select id="dask-yapi" name="dask_yapi">
+                  <option value="betonarme">Betonarme</option>
+                  <option value="yigma">Yığma</option>
+                  <option value="celik">Çelik</option>
+                  <option value="ahsap">Ahşap</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dask-bina-insa-yili">Bina İnşa Yılı</label>
+                <input type="number" id="dask-bina-insa-yili" name="dask_bina_insa_yili" placeholder="Örn: 2015" min="1900" max="2026" />
+              </div>
+              <div class="form-group">
+                <label for="dask-bina-kat-sayisi">Bina Kat Sayısı</label>
+                <input type="number" id="dask-bina-kat-sayisi" name="dask_bina_kat_sayisi" placeholder="Örn: 8" min="1" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dask-daire-kati">Daire Katı</label>
+                <input type="number" id="dask-daire-kati" name="dask_daire_kati" placeholder="Örn: 3" min="-5" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-saglik">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="yas">Yaş</label>
+                <input type="number" id="yas" name="yas" placeholder="Yaşınız" min="0" max="100" />
+              </div>
+              <div class="form-group">
+                <label for="saglik-turu">Sigorta Türü</label>
+                <select id="saglik-turu" name="saglik_turu">
+                  <option value="bireysel">Bireysel</option>
+                  <option value="aile">Aile</option>
+                  <option value="grup">Grup / Kurumsal</option>
+                  <option value="tamamlayici">Tamamlayıcı Sağlık Sigortası</option>
+                  <option value="ozel">Özel Sağlık Sigortası</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-seyahat">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="seyahat-ulke">Gidilecek Ülke</label>
+                <input type="text" id="seyahat-ulke" name="seyahat_ulke" placeholder="Almanya, Fransa..." />
+              </div>
+              <div class="form-group">
+                <label for="seyahat-sure">Süre (gün)</label>
+                <input type="number" id="seyahat-sure" name="seyahat_sure" placeholder="7" min="1" max="365" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-isyeri">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="isyeri-turu">İşyeri Türü</label>
+                <input type="text" id="isyeri-turu" name="isyeri_turu" placeholder="Market, ofis, depo..." />
+              </div>
+              <div class="form-group">
+                <label for="isyeri-m2">Alan (m²)</label>
+                <input type="number" id="isyeri-m2" name="isyeri_m2" placeholder="150" min="10" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dynamic-fields hidden" id="fields-hayat">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hayat-tc-kimlik-no">TC Kimlik No</label>
+                <input type="text" id="hayat-tc-kimlik-no" name="hayat_tc_kimlik_no" placeholder="11 haneli TC Kimlik No" />
+              </div>
+              <div class="form-group">
+                <label for="hayat-dogum-tarihi">Doğum Tarihi</label>
+                <input type="date" id="hayat-dogum-tarihi" name="hayat_dogum_tarihi" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hayat-yas">Yaş</label>
+                <input type="number" id="hayat-yas" name="hayat_yas" placeholder="Yaşınız" min="18" max="75" />
+              </div>
+              <div class="form-group">
+                <label for="hayat-turu">Sigorta Türü</label>
+                <select id="hayat-turu" name="hayat_turu">
+                  <option value="risk">Risk Hayat</option>
+                  <option value="birikimli">Birikimli Hayat</option>
+                  <option value="bes">BES (Emeklilik)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row hidden" id="bes-katki-wrapper">
+              <div class="form-group">
+                <label for="bes-asgari-katki-payi">Asgari Katkı Payı</label>
+                <select id="bes-asgari-katki-payi" name="bes_asgari_katki_payi">
+                  <option value="">Seçiniz</option>
+                  <option value="750">750</option>
+                  <option value="1000">1000</option>
+                  <option value="2000">2000</option>
+                  <option value="5000">5000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="notlar">Ek Notlar / Talepleriniz</label>
+            <textarea id="notlar" name="notlar" rows="3" placeholder="Sigorta hakkında belirtmek istediğiniz detaylar..."></textarea>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="kvkk" name="kvkk" required />
+            <label for="kvkk">KVKK kapsamında kişisel verilerimin işlenmesine izin veriyorum. *</label>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Teklif Al</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </form>
+
+        <!-- Başarı Mesajı -->
+        <div class="form-success hidden" id="formSuccess">
+          <div class="success-icon">✅</div>
+          <h3>Talebiniz Alındı!</h3>
+          <p>En kısa sürede sizinle iletişime geçeceğiz.<br />Ortalama yanıt süremiz <strong>2 saat</strong>tir.</p>
+          <a href="tel:05330242629" class="btn-primary">Hemen Arayın: 0533 024 26 29</a>
+        </div>
+        </div><!-- /teklif-main -->
+
+        <!-- Yan Panel -->
+        <div class="teklif-side">
+          <div class="side-card">
+            <div class="side-icon">⚡</div>
+            <h4>Hızlı Yanıt</h4>
+            <p>Teklifiniz ortalama 2 saat içinde hazırlanır.</p>
+          </div>
+          <div class="side-card">
+            <div class="side-icon">💰</div>
+            <h4>En Uygun Fiyat</h4>
+            <p>10 farklı sigorta şirketinden en iyi fiyatı karşılaştırıyoruz.</p>
+          </div>
+          <div class="side-card">
+            <div class="side-icon">🤝</div>
+            <h4>Ücretsiz Danışmanlık</h4>
+            <p>Uzman kadromuzdan ücretsiz sigorta danışmanlığı.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="hizmetler-section" id="hizmetler">
+    <div class="container">
+      <div class="section-label">HİZMETLERİMİZ</div>
+      <h2 class="section-title">Sigorta Çözümlerimiz</h2>
+      <p class="section-desc">Her ihtiyacınıza uygun kapsamlı sigorta ürünleri sunuyoruz.</p>
+      <div class="hizmet-grid">
+        <div class="hizmet-card featured">
+          <div class="featured-badge">Popüler</div>
+          <div class="hizmet-icon">🚗</div>
+          <h3>Araç Sigortaları</h3>
+          <p>Kasko ve trafik sigortasında en geniş kapsamı en uygun fiyatla sunuyoruz.</p>
+          <ul>
+            <li>Tam Kasko</li>
+            <li>Mini Kasko</li>
+            <li>Zorunlu Trafik</li>
+          </ul>
+          <a href="#teklif" class="hizmet-link">Teklif Al →</a>
+        </div>
+        <div class="hizmet-card">
+          <div class="hizmet-icon">🏠</div>
+          <h3>Konut Sigortaları</h3>
+          <p>Evinizi yangın, hırsızlık, su baskını ve depreme karşı güvence altına alın.</p>
+          <ul>
+            <li>Konut Sigortası</li>
+            <li>DASK (Zorunlu Deprem)</li>
+            <li>Kiracı Sigortası</li>
+          </ul>
+          <a href="#teklif" class="hizmet-link">Teklif Al →</a>
+        </div>
+        <div class="hizmet-card">
+          <div class="hizmet-icon">❤️</div>
+          <h3>Sağlık & Hayat</h3>
+          <p>Kendinizi ve ailenizi sağlık risklerine karşı koruyun.</p>
+          <ul>
+            <li>Bireysel Sağlık</li>
+            <li>Aile Sağlık</li>
+            <li>Hayat Sigortası</li>
+          </ul>
+          <a href="#teklif" class="hizmet-link">Teklif Al →</a>
+        </div>
+        <div class="hizmet-card">
+          <div class="hizmet-icon">🏢</div>
+          <h3>İşyeri Sigortası</h3>
+          <p>İşletmenizi her türlü riske karşı kapsamlı şekilde sigortalayın.</p>
+          <ul>
+            <li>İşyeri Yangın</li>
+            <li>İşveren Sorumluluk</li>
+            <li>Hırsızlık</li>
+          </ul>
+          <a href="#teklif" class="hizmet-link">Teklif Al →</a>
+        </div>
+        <div class="hizmet-card">
+          <div class="hizmet-icon">✈️</div>
+          <h3>Seyahat Sigortası</h3>
+          <p>Yurt içi ve yurt dışı seyahatlerinizde sağlık güvencesi.</p>
+          <ul>
+            <li>Schengen Vizesi</li>
+            <li>Yurt Dışı Sağlık</li>
+            <li>Bagaj Kaybı</li>
+          </ul>
+          <a href="#teklif" class="hizmet-link">Teklif Al →</a>
+        </div>
+        <div class="hizmet-card">
+          <div class="hizmet-icon">💚</div>
+          <h3>BES & Emeklilik</h3>
+          <p>AXA Hayat Emeklilik ile geleceğinizi güvence altına alın.</p>
+          <ul>
+            <li>Bireysel Emeklilik</li>
+            <li>Devlet Katkısı</li>
+            <li>Birikimli Hayat</li>
+          </ul>
+          <a href="#teklif" class="hizmet-link">Teklif Al →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YETKİLİ ACENTELER -->
+  <section class="acenteler-section" id="acenteler">
+    <div class="container">
+      <div class="section-label">YETKİLİ ACENTELİK</div>
+      <h2 class="section-title">Anlaşmalı Sigorta Şirketleri</h2>
+      <p class="section-desc">Türkiye'nin lider sigorta şirketlerinin yetkili acentesiyiz.</p>
+      <div class="acente-grid">
+        <div class="acente-card">
+          <img src="logos/ak.png" alt="Aksigorta" class="acente-logo-img" width="160" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/allianz.png" alt="Allianz Sigorta" class="acente-logo-img" width="160" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/axa.png" alt="AXA Sigorta" class="acente-logo-img" width="80" height="80" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/axahayatemeklilik.png" alt="AXA Hayat Emeklilik" class="acente-logo-img" width="160" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/hdi.png" alt="HDI Sigorta" class="acente-logo-img" width="140" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/hepiyi.png" alt="Hepiyi Sigorta" class="acente-logo-img" width="140" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/neova.png" alt="Neova Sigorta" class="acente-logo-img" width="160" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/quick.png" alt="Quick Sigorta" class="acente-logo-img" width="140" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/ray.png" alt="Ray Sigorta" class="acente-logo-img" width="160" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/sompo.png" alt="Sompo Sigorta" class="acente-logo-img" width="160" height="56" />
+        </div>
+        <div class="acente-card">
+          <img src="logos/zurich.png" alt="Zurich Sigorta" class="acente-logo-img" width="90" height="90" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEDEN BİZ -->
+  <section class="neden-section">
+    <div class="container">
+      <div class="section-label">NEDEN ÇAĞDAŞ LİDER?</div>
+      <h2 class="section-title">Farkımızı Hissedin</h2>
+      <div class="neden-grid">
+        <div class="neden-item">
+          <div class="neden-num">01</div>
+          <h4>Çoklu Şirket Karşılaştırması</h4>
+          <p>9 farklı sigorta şirketinden tek seferde teklif alarak en uygun fiyatı buluyoruz.</p>
+        </div>
+        <div class="neden-item">
+          <div class="neden-num">02</div>
+          <h4>Hasarda Yanınızdayız</h4>
+          <p>Sigorta süreçlerinin en kritik anında, hasar takibinde aktif destek sağlıyoruz.</p>
+        </div>
+        <div class="neden-item">
+          <div class="neden-num">03</div>
+          <h4>Deneyimli Kadro</h4>
+          <p>Alanında uzman sigorta danışmanlarımız size özel çözümler üretiyor.</p>
+        </div>
+        <div class="neden-item">
+          <div class="neden-num">04</div>
+          <h4>Şeffaf Fiyatlandırma</h4>
+          <p>Gizli ücret yok. Aldığınız teklif, ödeyeceğiniz fiyattır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section class="iletisim-section" id="iletisim">
+    <div class="container">
+      <div class="section-label">İLETİŞİM</div>
+      <h2 class="section-title">Bize Ulaşın</h2>
+      <div class="iletisim-grid">
+        <div class="iletisim-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Adresimiz</h4>
+              <p>Hasanpaşa Mah. Söğütlüçeşme Cad.<br />Çağdaş Ap. No:190 Kat:2 D:4<br />34722 Kadıköy / İstanbul</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Telefon</h4>
+              <a href="tel:05330242629">0533 024 26 29</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>E-posta</h4>
+              <a href="mailto:cagdaslidersigorta34@gmail.com">cagdaslidersigorta34@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">⏰</div>
+            <div>
+              <h4>Çalışma Saatleri</h4>
+              <p>Pazartesi – Cuma: 09:00 – 18:30<br />Cumartesi: 09:00 – 14:30<br />Pazar: Kapalı</p>
+            </div>
+          </div>
+          <div class="cta-buttons">
+            <a href="https://wa.me/905330242629?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum." class="btn-whatsapp-lg" target="_blank">💬 WhatsApp ile İletişim</a>
+            <a href="mailto:cagdaslidersigorta34@gmail.com" class="btn-email">✉️ E-posta Gönder</a>
+          </div>
+        </div>
+        <div class="iletisim-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.487!2d29.041!3d40.994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSGFzYW5wYcWfYSBNYWguLCBTw7Znw7x0bMO8w6dlxZ9tZSBDYWQuLCBLYWTEsWvDtnk!5e0!3m2!1str!2str!4v1"
+            width="100%"
+            height="380"
+            style="border:0;border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Çağdaş Lider Sigorta Konum">
+          </iframe>
+          <div class="map-overlay">
+            <a href="https://maps.google.com/?q=Hasanpaşa+Mah.+Söğütlüçeşme+Cad.+Çağdaş+Ap.+No:190+Kadıköy+İstanbul" target="_blank" class="btn-directions">📍 Yol Tarifi Al</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS / FAQ -->
+  <section class="faq-section" id="sss">
+    <div class="container">
+      <div class="section-label">SIKÇA SORULAN SORULAR</div>
+      <h2 class="section-title">Merak Ettikleriniz</h2>
+      <p class="section-desc">Sigorta hakkında en çok sorulan soruları derledik. Cevabını bulamazsanız bize ulaşın.</p>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Kasko ile zorunlu trafik sigortası arasındaki fark nedir?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Zorunlu trafik sigortası (MTK), karşı tarafa verdiğiniz maddi ve bedensel zararları karşılar — kendi aracınızı kapsamaz. Kasko ise kendi aracınızdaki hasarları (kaza, yangın, hırsızlık, doğal afet vb.) güvence altına alır. Her araç sahibinin zorunlu trafik sigortası yaptırması yasal yükümlülüktür.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Sigorta poliçemi nasıl yenileyebilirim?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Poliçenizin bitiş tarihinden önce bize ulaşmanız yeterli. Telefon, WhatsApp veya e-posta yoluyla talebinizi ilettiğinizde mevcut poliçenizi ve en güncel fiyat tekliflerini karşılaştırarak en avantajlı seçeneği sizin için hazırlarız.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Hasar durumunda ne yapmalıyım?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Hasarı tespit ettiğinizde önce güvenliğinizi sağlayın, ardından bizi arayın. Hasar ihbarınızı sigortacıya bildiriyor, gerekli belgelerin toplanmasında ve hasar takibinin her aşamasında yanınızda oluyoruz. Hasar süreci boyunca sizi yalnız bırakmıyoruz.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>DASK (Zorunlu Deprem Sigortası) zorunlu mudur?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Evet, DASK Türkiye'de belediye sınırları içindeki tüm konutlar için yasal zorunluluktur. Tapulu yapılarda zorunlu olan DASK olmadan konut sigortası yaptırılamaz, tapu devri ve abonelik işlemleri yapılamaz. Primleri oldukça uygun ve güvence çok geniştir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Teklif almak için hangi belgelere ihtiyacım var?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sigorta türüne göre değişmekle birlikte genel olarak: TC kimlik numaranız, araç sigortaları için ruhsat bilgileri, konut sigortası için tapu/kira bilgileri yeterlidir. Teklif aşamasında detaylı belge gerekmez — poliçe kesilirken ilgili belgeler talep edilir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Birden fazla sigorta şirketinden karşılaştırmalı teklif alabilir miyim?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Kesinlikle! Bu bizim en büyük avantajımız. Allianz, AXA, Aksigorta, Sompo ve diğer anlaşmalı şirketlerin tamamından tek seferde teklif alarak size en uygun fiyat ve kapsamı sunuyoruz. Siz tek formla başvurun, karşılaştırmayı biz yapalım.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Sağlık sigortası için sağlık raporu gerekli mi?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yaşa ve sağlık durumuna bağlı olarak değişebilir. Çoğu bireysel sağlık sigortasında kapsamlı sağlık beyanı formu yeterlidir. Belirli yaş üzeri veya kronik hastalık durumlarında ek tıbbi belgeler istenebilir. Durumunuza özel bilgi için bize ulaşın.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Poliçemi iptal etmek istersem ne yapmalıyım?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Poliçenizi her zaman iptal edebilirsiniz. Kullanılmayan süre için gün bazında iade hesaplanır. Bize telefon veya e-posta ile ulaşmanız yeterli; iptal ve iade işlemlerini sizin adınıza takip ediyoruz.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="faq-cta">
+        <p>Sorunuzu bulamadınız mı?</p>
+        <a href="https://wa.me/905330242629?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum." class="btn-primary" target="_blank">💬 WhatsApp'tan Sorun</a>
+        <a href="tel:05330242629" class="btn-outline-dark">📞 Hemen Arayın</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.jpeg" alt="Çağdaş Lider Sigorta" class="footer-logo-img" />
+        <span class="footer-slogan">Güvende Olmanın Adresi</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#acenteler">Acenteler</a>
+        <a href="#teklif">Teklif Al</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:05330242629">0533 024 26 29</a>
+        <a href="mailto:cagdaslidersigorta34@gmail.com">cagdaslidersigorta34@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Çağdaş Lider Sigorta. Tüm hakları saklıdır. | Kadıköy, İstanbul</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/905330242629?text=Merhaba%2C%20sigorta%20teklifi%20almak%20istiyorum." class="wa-float" target="_blank" title="WhatsApp ile Yazın">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="white"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.738 5.472 2.031 7.773L0 32l8.469-2.012A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.77-1.847l-.485-.287-5.03 1.195 1.215-4.905-.317-.503A13.27 13.27 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.908c-.398-.199-2.352-1.16-2.717-1.293-.364-.133-.63-.199-.895.199-.265.398-1.029 1.293-1.26 1.558-.232.265-.464.298-.862.1-.398-.2-1.682-.62-3.203-1.978-1.184-1.056-1.983-2.36-2.216-2.758-.232-.398-.025-.613.175-.811.18-.178.398-.464.597-.696.2-.232.266-.398.398-.663.133-.265.066-.498-.033-.696-.1-.2-.895-2.157-1.227-2.953-.323-.775-.65-.67-.895-.683l-.763-.013c-.265 0-.696.1-1.061.498-.364.398-1.392 1.36-1.392 3.317s1.425 3.847 1.624 4.112c.199.265 2.804 4.28 6.793 6.001.95.41 1.691.655 2.268.839.953.303 1.821.26 2.507.158.765-.114 2.352-.96 2.684-1.888.332-.928.332-1.724.232-1.888-.1-.166-.364-.265-.762-.465z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
